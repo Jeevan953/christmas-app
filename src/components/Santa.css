@@ -1,0 +1,21 @@
+.santa-container {
+  position: fixed;
+  top: 10%;
+  right: -200px;
+  animation: santaFly 20s linear infinite;
+  z-index: 3;
+}
+
+.santa {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes santaFly {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}

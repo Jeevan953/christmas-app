@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mountains of Christmas', cursive, Arial, sans-serif;
+  background: linear-gradient(180deg, #0a2e38 0%, #1a5a72 100%);
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.christmas-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.title {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+  }
+  to {
+    text-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
+  }
+}
+
+.music-btn {
+  background: linear-gradient(45deg, #d40000, #ff0000);
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  margin: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+}
+
+.music-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(255, 0, 0, 0.5);
+}
+
+.countdown {
+  font-size: 2rem;
+  margin: 20px;
+  text-align: center;
+}
+
+.countdown-item {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .countdown {
+    font-size: 1.5rem;
+  }
+  
+  .music-btn {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+  }
+}
