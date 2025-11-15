@@ -72,9 +72,10 @@ export default function App() {
       
       <Snowfall />
       <Fireworks playing={playing} />
-      <Santa />
-      
-      <h1 className="title">Merry Christmas! 🎅</h1>
+       
+   <h1 className="title">Merry Christmas! 🎅</h1>
+    <Santa className="santa-one" />
+    <Santa className="santa-two" />
       
       <div className="countdown">
         <div className="countdown-item">{timeLeft.days || 0} Days</div>
@@ -91,3 +92,8 @@ export default function App() {
     </div>
   )
 }
+
+
+
+
+
